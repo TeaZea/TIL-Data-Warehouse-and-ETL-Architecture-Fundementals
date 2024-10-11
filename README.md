@@ -1,13 +1,11 @@
 # TIL: Data Warehouse and ETL Architecture
 
-### TLDR;
+### TLDR + Sales Order Transaction Fact Table;
 This is a collection of the basic fundementals of data warehouseing and ELT architecture I've learned. This repo showcases some schema and SCD assignments I've completed as well as a 'cap stone' project I took the initiative of completing.
 
----
+[This](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/tree/main/Sales%20Order%20Transactional%20Fact%20Table) a project I decided to do so I can put the fundementals I learned on display.
 
-### Dessert first...
-Here's a project I decided to do to put the fundementals I learned on display
-TODO
+(TODO detailed views of each branch of the snowflake + reasoning)
 
 ---
 
@@ -45,4 +43,15 @@ Below shows basic knowledge of understanding attributes and the need for consist
 ![etl fundementals](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/ETL%20Fundemental/ETL%20Fundemental.jpg)
 
 ---
+
+### Factless Fact Table
+
+TODO
+
+---
+
+### SCD Types
+
+TODO
+
 
