@@ -5,6 +5,12 @@ This is a collection of the basic fundementals of data warehouseing and ELT arch
 
 ---
 
+### Dessert first...
+Here's a project I decided to do to put the fundementals I learned on display
+TODO
+
+---
+
 ### Transaction, Snapshot and Accumulating Snapshot Tables
 Below is a basic transaction table for a students meal card spending. I decided to use a star schema as this was fairly straight forward.
 
