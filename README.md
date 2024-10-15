@@ -5,9 +5,16 @@ This is a collection of the basic fundementals of data warehouseing and ELT arch
 
 [This](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Sales%20Order%20Transactional%20Fact%20Table/Sales%20Order%20Schema-ver1.jpg) is a project I decided to do so I can put the fundementals I learned on display. I decided to do a sales order transaction fact table (within the scope of manufacturing domain) as it reflects something I see day to day. I chose to create a snowflake schema because I work with AS400 quite a bit and I feel like a snowflake schema can better suit this type of program which relies on various methods of reflecting/streaming data, both up and downstream.
 
-Below is the fact table. It's fed from 5 dimension tables and it's purpose is to show the things that would be included on an invoice (IE: product, quantity, type, freight, etc.)
+Below is the fact table. It's fed from 5 dimension tables and it's purpose is to show the customer, product and other important details that would be included on a business invoice.
 
 ![fact table](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Sales%20Order%20Transactional%20Fact%20Table/Sales%20order%20fact.jpg)
+
+#### Dimensions and Relationships Overview
+TODO: describe basic attributes of dimensions
+
+#### Challenges
+TODO: creating the product dimension
+
 
 ---
 
