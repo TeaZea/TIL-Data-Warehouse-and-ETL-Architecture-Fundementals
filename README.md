@@ -3,7 +3,7 @@
 ### TLDR + Sales Order Transaction Fact Table;
 This is a collection of the basic fundementals of data warehouseing and ELT architecture I've learned. This repo showcases some schema and SCD assignments I've completed as well as a 'cap stone' project I took the initiative of completing.
 
-[This](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/tree/main/Sales%20Order%20Transactional%20Fact%20Table) a project I decided to do so I can put the fundementals I learned on display.
+[This](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Sales%20Order%20Transactional%20Fact%20Table/Sales%20Order%20Schema-ver1.jpg) is a project I decided to do so I can put the fundementals I learned on display.
 
 (TODO detailed views of each branch of the snowflake + reasoning)
 
