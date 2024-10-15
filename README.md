@@ -1,7 +1,7 @@
 # TIL: Data Warehouse and ETL Architecture
 
 ### TLDR + Sales Order Transaction Fact Table;
-This is a collection of the basic fundementals of data warehouseing and ELT architecture I've learned. This repo showcases some schema and SCD assignments I've completed as well as a 'cap stone' project I took the initiative of completing.
+This is a collection of the basic fundementals of data warehouseing and ELT architecture I've learned. This repo showcases some schema and SCD assignments I've completed as well as a 'cap stone' project I took the initiative of completing. All of the schemas here were made using [draw.io](https://app.diagrams.net/)
 
 [This](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Sales%20Order%20Transactional%20Fact%20Table/Sales%20Order%20Schema-ver1.jpg) is a project I decided to do so I can put the fundementals I learned on display.
 
@@ -46,12 +46,12 @@ Below shows basic knowledge of understanding attributes and the need for consist
 
 ### Factless Fact Table
 
-TODO
+![simple factless fact table](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Factless%20Fact%20Table/Basic%20Orientation%20Program%20Registration%20Factless%20Fact%20Table.jpg)
 
 ---
 
 ### SCD Types
 
-TODO
+[This](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/tree/main/Type%201_Type%202%20SCD) is a link to a little assignment I did to demonstrate understanding of Type 1 and 2 SCD. This table shows information of faculty members. 'highest degree' can be changed in place, while a record of a faculty member's 'rank' has to be kept for historical analysis. I used excel as I thought this was the easiest way to showcase changes being made to a table.
 
 
