@@ -33,7 +33,7 @@ Outside of developing the actual fact table, the entire branch of the product_Di
 The product dimension (and associated dims) needed to be done from a manufacturing-first point of view. Products don't come from nothing. They are made using various components. Those components are created from their own raw materials or other components. On top of all that, they have their own list and retail prices, as well as dimensions. While building this portion of the schema out, I had to constantly modify which dims certain records where placed, often finding I had to create a whole new dim for them. Overall, even though this was the most challenging part, it was also the most fun part.
 
 ### Beyond The Technical Solution
-When designing the schema, I tried to include as many branching dims as possible that would also help facilitate better data driven decisions downstream for multiple departments within an organization. For instance, sales and marketing departments can benefit the most from the shocased dimensions, however, product teams can deep dive into the costing or complexity of components; while the logistics department can monitor fluctiation in freight charges year over year.
+When designing the schema, I tried to include as many branching dims as possible that would also help facilitate better data driven decisions downstream for multiple departments within an organization. For instance, sales and marketing departments can benefit the most from the showcased dimensions, however, product teams can deep dive into the costing or complexity of components; while the logistics department can monitor fluctuations in freight charges year over year.
 
 
 ## TIL Transaction, Snapshot and Accumulating Snapshot Tables
