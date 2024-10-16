@@ -20,7 +20,10 @@ Below is the fact table. It's fed from 5 dimension tables and it's purpose is to
 - Freight Dim
 - Taxes Dim
 
-All dimensions posess a natureal key and a surugate key. The SKs function as the primary key for their own dimension and foreign key for tables it feeds into.
+All dimensions posess a natural key and a surrogate key. The SKs function as the PK for their own dimension and FK for tables it feeds into.
+
+>[!Note]
+>Some dimensions would benefit from record keeping (IE: frieght cost (freight dimension) or the price of raw materials for components (product dimension). Those details were not included in this project as I was trying to focus more on the schema as a whole while still including a bit of info like the attributes of the records.
 
 ### Challenges
 Outside of developing the actual fact table, the entire branch of the product_Dim was the most challenging part.
@@ -30,10 +33,10 @@ Outside of developing the actual fact table, the entire branch of the product_Di
 The product dimension (and associated dims) needed to be done from a manufacturing-first point of view. Products don't come from nothing. They are made using various components. Those components are created from their own raw meterials or other components. On top of all of that, all of them have their own list and retail prices, as well as dimensions. While building this portion of the schema out, I had to constantly modify which dims certain records where placed, often finding I had to create a whole new dim for them. Overall, even though this was the most challenging part, it was also the most fun part.
 
 ### Beyond The Technical Solution
+When designing the schema, I tried to include as many branching dims as possible that would also help facilitate better data driven decisions downstream for multiple departments within an organization. For instance, sales and marketing departments can benefit the most from the shocased dimensions, however, product teams can deep dive into the costing or complexity of components; while the logistics department can monitor fluctiation in freight charges year over year.
 
 
-
-## Transaction, Snapshot and Accumulating Snapshot Tables
+## TIL Transaction, Snapshot and Accumulating Snapshot Tables
 Below is a basic transaction table for a students meal card spending. I decided to use a star schema as this was fairly straight forward.
 
 ![transaction](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Basic%20Transaction%20Table/Basic%20Student%20Meal%20Transaction%20Table.jpg)
@@ -49,7 +52,7 @@ Lastly, this is a basic accumulating snapshot fact table showing when grants wer
 ![accumulating snapshot](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Accumilating%20Snapshot%20Table/Grants%20Accumulating%20Snapshot%20Fact%20Table.jpg) 
 
 
-## Warehousing Architecture
+## TIL Warehousing Architecture
 
 Here are two solutions for possible user access layers. The maine warehouse takes data from multiple campuses and displays them 2 ways. The first by campuses and the second by amalgamation of records from all campuses.
 
@@ -58,19 +61,19 @@ Here are two solutions for possible user access layers. The maine warehouse take
 ![warehouse architecture2](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Data%20Warehouseing%20Architecture/Data%20Warehouse%20Architecture_Sltn2.jpg)
 
 
-## ETL Fundementals
+## TIL ETL Fundementals
 
 Below shows basic knowledge of understanding attributes and the need for consistant data types and governance during the transformation process of an ETL pipeline.
 
 ![etl fundementals](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/ETL%20Fundemental/ETL%20Fundemental.jpg)
 
 
-## Factless Fact Table
+## TIL Factless Fact Table
 
 ![simple factless fact table](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Factless%20Fact%20Table/Basic%20Orientation%20Program%20Registration%20Factless%20Fact%20Table.jpg)
 
 
-## SCD Types
+## TIL SCD Types
 
 [This](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/tree/main/Type%201_Type%202%20SCD) is a link to a little assignment I did to demonstrate understanding of Type 1 and 2 SCD. This table shows information of faculty members. 'highest degree' can be changed in place, while a record of a faculty member's 'rank' has to be kept for historical analysis. I used excel as I thought this was the easiest way to showcase changes being made to a table.
 
