@@ -2,17 +2,23 @@
 
 ### TLDR + Sales Order Transaction Fact Table Project;
 This is a collection of the basic fundementals of data warehouseing and ELT architecture I've learned. This repo showcases some schema and SCD assignments I've completed as well as a 'cap stone' project I took the initiative of completing. All of the schemas here were made using [draw.io](https://app.diagrams.net/)
-
+--
 [This](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Sales%20Order%20Transactional%20Fact%20Table/Sales%20Order%20Schema-ver1.jpg) is a project I decided to do so I can put the fundementals I learned on display. I decided to do a sales order transaction fact table (within the scope of manufacturing domain) as it reflects something I see day to day. I chose to create a snowflake schema because I work with AS400 quite a bit and I feel like a snowflake schema can better suit this type of program which relies on various methods of reflecting/streaming data, both up and downstream.
 
 Below is the fact table. It's fed from 5 dimension tables and it's purpose is to show the customer, product and other important details that would be included on a business invoice.
 
 ![fact table](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Sales%20Order%20Transactional%20Fact%20Table/Sales%20order%20fact.jpg)
 
-#### Dimensions and Relationships Overview
-TODO: describe basic attributes of dimensions
+### Main Dimensions
+- **Customer Dim**
+- **Date Dim**
+- **Product Dim**
+- **Freight Dim**
+- **Taxes Dim**
 
-#### Challenges
+All dimensions posess a natureal key and a surugate key. The SKs function as the primary key for their own dimension and foreign key for tables it feeds into.
+
+### Challenges
 TODO: creating the product dimension
 
 
