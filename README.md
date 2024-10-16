@@ -23,7 +23,7 @@ Below is the fact table. It's fed from 5 dimension tables and it's purpose is to
 All dimensions posess a natural key and a surrogate key. The SKs function as the PK for their own dimension and FK for tables it feeds into.
 
 >[!Note]
->Some dimensions would benefit from record keeping (IE: frieght cost (freight dimension) or the price of raw materials for components (product dimension). Those details were not included in this project as I was trying to focus more on the schema as a whole while still including a bit of info like the attributes of the records.
+>Some dimensions would benefit from record keeping IE: frieght cost (freight dimension) or the price of raw materials for components (product dimension). Those details were not included in this project as I was trying to focus more on the schema as a whole while still including a bit of info like the attributes of the records.
 
 ### Challenges
 Outside of developing the actual fact table, the entire branch of the product_Dim was the most challenging part.
