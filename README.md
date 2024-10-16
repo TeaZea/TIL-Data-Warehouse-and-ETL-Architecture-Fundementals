@@ -4,9 +4,8 @@
 
 This is a collection of the basic fundementals of data warehouseing and ELT architecture I've learned. This repo showcases some schema and SCD assignments I've completed as well as a 'cap stone' project I took the initiative of completing. All of the schemas here were made using [draw.io](https://app.diagrams.net/)
 
----
 
-### Sales Order Transaction Fact Table Project
+## Sales Order Transaction Fact Table Project
 
 [This](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Sales%20Order%20Transactional%20Fact%20Table/Sales%20Order%20Schema-ver1.jpg) is a project I decided to do so I can put the fundementals I learned on display. I decided to do a sales order transaction fact table (within the scope of manufacturing domain) as it reflects something I see day to day. I chose to create a snowflake schema because I work with AS400 quite a bit and I feel like a snowflake schema can better suit this type of program which relies on various methods of reflecting/streaming data, both up and downstream.
 
@@ -29,9 +28,8 @@ Outside of developing the actual fact table, the entire branch of the product_di
 ![product dim](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Sales%20Order%20Transactional%20Fact%20Table/Product%20branch.jpg)
 
 
----
 
-### Transaction, Snapshot and Accumulating Snapshot Tables
+## Transaction, Snapshot and Accumulating Snapshot Tables
 Below is a basic transaction table for a students meal card spending. I decided to use a star schema as this was fairly straight forward.
 
 ![transaction](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Basic%20Transaction%20Table/Basic%20Student%20Meal%20Transaction%20Table.jpg)
@@ -46,9 +44,8 @@ Lastly, this is a basic accumulating snapshot fact table showing when grants wer
 
 ![accumulating snapshot](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Accumilating%20Snapshot%20Table/Grants%20Accumulating%20Snapshot%20Fact%20Table.jpg) 
 
----
 
-### Warehousing Architecture
+## Warehousing Architecture
 
 Here are two solutions for possible user access layers. The maine warehouse takes data from multiple campuses and displays them 2 ways. The first by campuses and the second by amalgamation of records from all campuses.
 
@@ -56,23 +53,20 @@ Here are two solutions for possible user access layers. The maine warehouse take
 
 ![warehouse architecture2](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Data%20Warehouseing%20Architecture/Data%20Warehouse%20Architecture_Sltn2.jpg)
 
----
 
-### ETL Fundementals
+## ETL Fundementals
 
 Below shows basic knowledge of understanding attributes and the need for consistant data types and governance during the transformation process of an ETL pipeline.
 
 ![etl fundementals](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/ETL%20Fundemental/ETL%20Fundemental.jpg)
 
----
 
-### Factless Fact Table
+## Factless Fact Table
 
 ![simple factless fact table](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Factless%20Fact%20Table/Basic%20Orientation%20Program%20Registration%20Factless%20Fact%20Table.jpg)
 
----
 
-### SCD Types
+## SCD Types
 
 [This](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/tree/main/Type%201_Type%202%20SCD) is a link to a little assignment I did to demonstrate understanding of Type 1 and 2 SCD. This table shows information of faculty members. 'highest degree' can be changed in place, while a record of a faculty member's 'rank' has to be kept for historical analysis. I used excel as I thought this was the easiest way to showcase changes being made to a table.
 
