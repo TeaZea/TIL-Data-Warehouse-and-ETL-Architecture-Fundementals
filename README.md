@@ -23,9 +23,13 @@ Below is the fact table. It's fed from 5 dimension tables and it's purpose is to
 All dimensions posess a natureal key and a surugate key. The SKs function as the primary key for their own dimension and foreign key for tables it feeds into.
 
 ### Challenges
-Outside of developing the actual fact table, the entire branch of the product_dim was the most challenging part.
+Outside of developing the actual fact table, the entire branch of the product_Dim was the most challenging part.
 
 ![product dim](https://github.com/TeaZea/Data-Warehouse-and-ETL-Architecture-Fundementals/blob/main/Sales%20Order%20Transactional%20Fact%20Table/Product%20branch.jpg)
+
+The product dimension (and associated dims) needed to be done from a manufacturing-first point of view. Products don't come from nothing. They are made using various components. Those components are created from their own raw meterials or other components. On top of all of that, all of them have their own list and retail prices, as well as dimensions. While building this portion of the schema out, I had to constantly modify which dims certain records where placed, often finding I had to create a whole new dim for them. Overall, even though this was the most challenging part, it was also the most fun part.
+
+### Beyond The Technical Solution
 
 
 
